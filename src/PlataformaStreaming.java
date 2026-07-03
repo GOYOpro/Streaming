@@ -17,6 +17,17 @@ public class PlataformaStreaming {
     }
 
     public void Reporte(){
+        int Total = 0;
+        String PlanU;
+
+        for(CuentaUsuario usuario : usuarios){
+           double costoMes = usuario.CostoMES();
+            Total += costoMes;
+
+            System.out.println("Plan: " + PlanEstandar.class.getSimpleName());
+            System.out.println("Plan: " + PlanPremium.class.getSimpleName());
+        }
+        System.out.println("Ingreso total de los usuarios: " + Total);
     }
 
 }
