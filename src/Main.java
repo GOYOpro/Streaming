@@ -17,7 +17,8 @@ public class Main
 
 
 
-        do {
+        do
+        {
             System.out.println("\n=============================================");
             System.out.println("     BASE DE DATOS - PLATAFORMA DE STREAMING     ");
             System.out.println("=============================================");
@@ -27,15 +28,20 @@ public class Main
 
             if (opcion == 1)
             {
-                //Se llama al metodo registrar
+                System.out.println("\n=============================================");
+                System.out.println("     REGISTRO USUARIOS     ");
+                System.out.println("=============================================");
 
-           // miMetodo.AgregarUsuarios();
-            } else if (opcion == 2) {
+                // miMetodo.AgregarUsuarios();
 
-            miMetodo.Reporte();
+            } else if (opcion == 2)
+            {
+                System.out.println("\n=============================================");
+                System.out.println("     REGISTRO USUARIOS     ");
+                System.out.println("=============================================");
+
+                miMetodo.Reporte();
             }
-
-
         } while (true);
 
 
