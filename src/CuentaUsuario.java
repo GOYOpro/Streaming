@@ -1,8 +1,8 @@
 public class CuentaUsuario {
 
-    String CorreoElectronico;
-    int MesesActico;
-    Subscripcion subscripcion;
+    private String CorreoElectronico;
+    private int MesesActico;
+     private Subscripcion subscripcion;
 
     public CuentaUsuario(String correoElectronico, int mesesActico, Subscripcion subscripcion) {
         CorreoElectronico = correoElectronico;
@@ -25,4 +25,18 @@ public class CuentaUsuario {
     public void setMesesActico(int mesesActico) {
         MesesActico = mesesActico;
     }
+
+    public Subscripcion getSubscripcion() {
+        return subscripcion;
+    }
+
+    public void setSubscripcion(Subscripcion subscripcion) {
+        this.subscripcion = subscripcion;
+    }
+
+    public double CostoMES(){
+        return this.subscripcion.costoSubscripcion(this.MesesActico);
+    }
 }
+
+
