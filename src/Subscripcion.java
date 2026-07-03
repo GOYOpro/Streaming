@@ -1,3 +1,3 @@
 public interface Subscripcion {
- double calcularCostoSUB ();
+ double costoSubscripcion (int mes);
 }
