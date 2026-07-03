@@ -12,8 +12,9 @@ public class Main
     {
 
         PlataformaStreaming miMetodo = new PlataformaStreaming();
+        Scanner sc = new Scanner(System.in);
         int opcion = 0, meses = 0;
-        String correo = "";
+        String opcion2 = "", correo = "";
 
 
 
@@ -28,16 +29,24 @@ public class Main
 
             if (opcion == 1)
             {
-                System.out.println("\n=============================================");
-                System.out.println("     REGISTRO USUARIOS     ");
-                System.out.println("=============================================");
+                do
+                {
+                    System.out.println("\n=============================================");
+                    System.out.println("     REGISTRO USUARIOS     ");
+                    System.out.println("=============================================");
 
-                // miMetodo.AgregarUsuarios();
+                    // miMetodo.AgregarUsuarios();
+                    System.out.print("¿Desea agregar otro usuario? (Y/N)... ");
+                    opcion2 = sc.nextLine();
+
+                }while (opcion2.equalsIgnoreCase("Y"));
+
+
 
             } else if (opcion == 2)
             {
                 System.out.println("\n=============================================");
-                System.out.println("     REGISTRO USUARIOS     ");
+                System.out.println("     MOSTRAR REPORTES     ");
                 System.out.println("=============================================");
 
                 miMetodo.Reporte();
