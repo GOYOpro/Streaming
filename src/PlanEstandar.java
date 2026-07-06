@@ -1,10 +1,6 @@
-public abstract class PlanEstandar implements Subscripcion {
-    public double calcular(int meses) {
-        return meses * 9.00;
-    }
-
+public class PlanEstandar implements Subscripcion {
     @Override
-    public String toString() {
-        return "PlanEstandar{}";
+    public double costoSubscripcion(int mes) {
+        return mes * 9;
     }
 }

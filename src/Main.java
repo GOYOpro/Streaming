@@ -11,47 +11,19 @@ public class Main
     static void main()
     {
 
+
+
         PlataformaStreaming miMetodo = new PlataformaStreaming();
         Scanner sc = new Scanner(System.in);
         int opcion = 0, meses = 0;
         String opcion2 = "", correo = "";
+        miMetodo.AgregarUsuarios(new CuentaUsuario("David@783", 7, new PlanBasico()));
 
+        miMetodo.AgregarUsuarios(new CuentaUsuario("Jesus@9384", 5, new PlanEstandar()));
 
+        miMetodo.AgregarUsuarios(new CuentaUsuario("Adrian@", 5, new PlanPremium()));
 
-        do
-        {
-            System.out.println("\n=============================================");
-            System.out.println("     BASE DE DATOS - PLATAFORMA DE STREAMING     ");
-            System.out.println("=============================================");
-
-            System.out.println("1. Registrar usuario");
-            System.out.println("2. Mostrar reportes");
-
-            if (opcion == 1)
-            {
-                do
-                {
-                    System.out.println("\n=============================================");
-                    System.out.println("     REGISTRO USUARIOS     ");
-                    System.out.println("=============================================");
-
-                    // miMetodo.AgregarUsuarios();
-                    System.out.print("¿Desea agregar otro usuario? (Y/N)... ");
-                    opcion2 = sc.nextLine();
-
-                }while (opcion2.equalsIgnoreCase("Y"));
-
-
-
-            } else if (opcion == 2)
-            {
-                System.out.println("\n=============================================");
-                System.out.println("     MOSTRAR REPORTES     ");
-                System.out.println("=============================================");
-
-                miMetodo.Reporte();
-            }
-        } while (true);
+        miMetodo.Reporte();
 
 
     }
