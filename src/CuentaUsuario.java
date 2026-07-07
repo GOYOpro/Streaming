@@ -2,7 +2,7 @@ public class CuentaUsuario {
 
     private String CorreoElectronico;
     private int MesesActico;
-     private Subscripcion subscripcion;
+    private Subscripcion subscripcion;
 
     public CuentaUsuario(String correoElectronico, int mesesActico, Subscripcion subscripcion) {
         CorreoElectronico = correoElectronico;
