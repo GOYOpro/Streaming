@@ -17,7 +17,7 @@ public class Main
         Scanner sc = new Scanner(System.in);
         CuentaUsuario cuentaUsuario;
         Subscripcion subscripcionElegida = null;
-        int opcion = 0,opcionPlan = 0, meses = 0,plan= 0;
+        int opcion = 0, meses = 0,plan= 0;
         String correo = "";
 
         miMetodo.AgregarUsuarios(new CuentaUsuario("Jesus@",4,new PlanEstandar()));
